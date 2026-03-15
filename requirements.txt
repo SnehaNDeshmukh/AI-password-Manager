@@ -1,0 +1,24 @@
+# VaultAI — AI-Powered Password Manager
+# Python 3.10+
+
+# ── Core framework ──────────────────────────────────────────────
+streamlit>=1.35.0
+
+# ── Encryption ──────────────────────────────────────────────────
+cryptography>=42.0.0        # AES-256-CBC, PBKDF2 via hazmat layer
+bcrypt>=4.1.0               # Master password hashing
+
+# ── AI / LLM ───────────────────────────────────────────────────
+groq>=0.9.0                 # Groq SDK (Qwen-3-32B)
+
+# ── HTTP ────────────────────────────────────────────────────────
+requests>=2.31.0            # HaveIBeenPwned API calls
+
+# ── Clipboard ───────────────────────────────────────────────────
+pyperclip>=1.8.2            # Cross-platform clipboard with auto-clear
+
+# ── Environment ─────────────────────────────────────────────────
+python-dotenv>=1.0.0        # Load .env secrets
+
+# ── Dev / Testing ───────────────────────────────────────────────
+pytest>=7.4.0
